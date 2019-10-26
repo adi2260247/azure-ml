@@ -1,0 +1,19 @@
+{
+	"name": "patientData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "patientData01.csv",
+				"folderPath": "patient_data/2017/01",
+				"container": "bigdata"
+			}
+		}
+	}
+}
